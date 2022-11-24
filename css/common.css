@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 顶部业务 */
+.header_nav {
+  width: 100%;
+  height: 52px;
+  background-color: #333;
+  line-height: 52px;
+}
+.w {
+  position: relative;
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header_nav ul {
+  float: right;
+}
+.header_nav li {
+  float: left;
+}
+.header_nav li:nth-child(-n + 6)::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin: 0 17px;
+  background-color: #dcdcdc;
+}
+.header_nav li a {
+  font-size: 14px;
+  color: #dcdcdc;
+}.header_nav li:last-child a::before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 16px;
+  margin-right: 5px;
+  background: url("../images/sprites.png") no-repeat -124px -50px;
+  background-size: 310px auto;
+}
+.header_item {
+  height: 130px;
+  background-color: white;
+}
+.header_item .logo {
+  float: left;
+  width: 207px;
+  height: 70px;
+  margin: 30px 19px 30px 24px;
+}
+.header_item .logo img {
+  width: 100%;
+}
+.items {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 55px;
+}
+.items li{
+  float: left;
+  padding: 0 24px;
+  font-size: 16px;
+}
+.items li a {
+  color: #333;
+}
+.search {
+  position: relative;
+  float: right;
+  width: 222px;
+  height: 32px;
+  margin-top: 53px;
+}
+.search_input {
+  width: 172px;
+  height: 30px;
+  padding-left: 22px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #ccc;
+  background-color: white;
+  resize: none;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #ccc;
+}
+.search::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: url(../images/sprites.png) no-repeat -77px -67px;
+  background-size: 386px auto;
+}
+.search::after {
+  content: '2';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 14px;
+  padding: 0 5px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  background-color: #e26237;
+  border-radius: 7px;
+}
+.shopcar {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-left: 15px;
+  background: url(../images/sprites.png) no-repeat -115px -67px;
+  background-size: 386px auto;
+}
+
+/* 底部模块 */
+.footer {
+  height: 645px;
+  background-color: white;
+  overflow: hidden;
+}
+.footer_head {
+  height: 302px;
+}
+.footer_head>div {
+  float: left;
+}
+.kehu {
+  width: 192px;
+  height: 143px;
+  margin: 79px 93px 80px 59px;
+}
+.we {
+  width: 193px;
+  height: 143px;
+  margin: 79px 59px 80px 58px;
+}
+.app {
+  position: relative;
+  width: 241px;
+  height: 156px;
+  margin: 79px 35px 63px 0;
+}
+.tel {
+  position: relative;
+  width: 160px;
+  height: 122px;
+  margin: 79px 0 98px 76px;
+}
+.tel::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -76px;
+  width: 2px;
+  height: 189px;
+  background-color: #f2f2f2;
+}
+.footer_head h4{
+  color: #999;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+.footer_head p {
+  color: #999;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.kehu div ,
+.we div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 93px;
+  height: 93px;
+  margin-top: 35px;
+  border: 1px solid #eeeeee;
+}
+.kehu div:first-child {
+  margin-right: 6px;
+}
+.icon_item1 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -205px -69px;
+}
+.icon_item2 {
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -300px -69px;
+}
+.icon_item3 {
+  width: 36px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -204px -14px;
+}
+.icon_item4 {
+  width: 36px;
+  height: 30px;
+  background: url(../images/sprites.png) no-repeat -300px -14px;
+}
+.app div{
+  width: 112px;
+  height: 112px;
+  float: left;
+  margin-top: 24px;
+  padding: 4px;
+  border: 1px solid #eee;
+}
+.app div img {
+  width: 104px;
+  height: 104px;
+}
+.footer_head .app p {
+  margin-left: 142px;
+}
+.footer_head .app .first_p {
+  margin-top: 37px;
+}
+.footer_head .app .last_p {
+  margin-top: 0;
+}
+.app button {
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+  width: 103px;
+	height: 32px;
+	background-color: #27ba9b;
+  margin-left: 138px;
+  border: none;
+  color: #fff;
+}
+.footer_head .tel .first_p {
+  width: 160px;
+	height: 17px;
+  margin-top: 44px;
+	font-family: 'PingFangSC-Semibold';
+	font-size: 22px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #666666;
+  text-align: center;
+}
+.footer_head .tel .second_p {
+  width: 159px;
+	height: 14px;
+  margin-top: 17px;
+	font-family: 'PingFangSC-Light';
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+.footer_foot {
+  height: 343px;
+  background-color: #333;
+}
+.shang {
+  height: 175px;
+}
+.shang div {
+  float: left;
+  width: 186px;
+  height: 58px;
+  line-height: 58px;
+  font-size: 28px;
+  text-align: right;
+  color: #fff;
+}
+.shang div:nth-child(1) {
+  margin: 60px 300px auto 37px;
+}
+.shang div:nth-child(2) {
+  margin: 60px 300px auto 0;
+}
+.shang div:nth-child(3) {
+  margin-top: 60px 
+}
+.shang div span {
+  display: block;
+  float: left;
+  width: 58px;
+  height: 58px;
+}
+.ft_1 {
+  background: url(../images/sprites.png) no-repeat 0 0;
+}
+.ft_2 {
+  background: url(../images/sprites.png) no-repeat -64px 0;
+}
+.ft_3 {
+  background: url(../images/sprites.png) no-repeat -129px 0;
+}
+.xia {
+  position: relative;
+  height: 168px;
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  overflow: hidden;
+}
+.xia::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+	height: 3px;
+	background-color: #434343;
+}
+.xia div {
+  width: 600px;
+  height: 20px;
+  line-height: 20px;
+  margin: 41px auto 20px;
+}
+.xia ul li {
+  position: relative;
+  float: left;
+  padding: 0 10px;
+}
+.xia ul li:nth-child(-n+6)::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 1px;
+  height: 14px;
+  background-color: #999;
+}
+.xia ul li a {
+  color: #999;
+  font-size: 14px;
+}
